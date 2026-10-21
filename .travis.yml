@@ -21,7 +21,9 @@ branches:
 script:
   - git submodule -q update --init
   - dotnet restore
-  - dotnet test tests/ImageSharp.Tests/ImageSharp.Tests.csproj -c Release -f "netcoreapp2.1"
+  - dotnet list package --vulnerable --include-transitive
+  - dotnet format --verify-no-changes
+  - dotnet test tests/ImageSharp.Tests/ImageSharp.Tests.csproj -c Release -f "netcoreapp2.1" /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletReportOutput=coverage.xml
 
 env:
   global:
