@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "dependencies": {
+    ".NETCoreApp,Version=v2.0": {},
+    ".NETCoreApp,Version=v2.1": {},
+    ".NETFramework,Version=v4.6.2": {},
+    ".NETFramework,Version=v4.7": {},
+    ".NETFramework,Version=v4.7.1": {}
+  }
+}

@@ -5,6 +5,11 @@ using System;
 using System.Globalization;
 using System.Numerics;
 
+/// <summary>
+/// Shared mapping of ICC tag data entry type signatures ensuring consistency between IccDataReader and IccDataWriter.
+/// The switch cases in ReadTagDataEntry should remain in sync with TagDataEntryMap.SupportedSignatures.
+/// </summary>
+
 namespace SixLabors.ImageSharp.MetaData.Profiles.Icc
 {
     /// <summary>
